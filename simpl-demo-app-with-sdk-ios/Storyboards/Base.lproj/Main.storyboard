@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wIA-wm-QA0">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wIA-wm-QA0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,22 +39,20 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f3D-XT-t50">
-                                <rect key="frame" x="40" y="423" width="334" height="110"/>
+                                <rect key="frame" x="40" y="415" width="334" height="118"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0WZ-Cf-juz">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOg-Mx-OOr">
-                                        <rect key="frame" x="0.0" y="40" width="334" height="30"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="44" width="334" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q1-qW-slV">
-                                        <rect key="frame" x="0.0" y="80" width="334" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q1-qW-slV">
+                                        <rect key="frame" x="0.0" y="88" width="334" height="30"/>
                                         <color key="backgroundColor" red="0.052992089327938287" green="0.75082982512953367" blue="0.20330513554577762" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,17 +63,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQK-mb-6hX">
+                                <rect key="frame" x="40" y="557" width="334" height="30"/>
+                                <color key="backgroundColor" red="0.052992089329999999" green="0.75082982509999996" blue="0.20330513550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Get Fingerprint">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="getFingerprintTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6BO-AY-xVf"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wQK-mb-6hX" firstAttribute="trailing" secondItem="4Q1-qW-slV" secondAttribute="trailing" id="5c0-O9-aaY"/>
+                            <constraint firstItem="wQK-mb-6hX" firstAttribute="leading" secondItem="4Q1-qW-slV" secondAttribute="leading" id="bvB-UN-KhK"/>
                             <constraint firstAttribute="trailing" secondItem="8x5-Ud-PlJ" secondAttribute="trailing" id="gBI-tA-5rX"/>
                             <constraint firstItem="8x5-Ud-PlJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hpE-LN-fku"/>
                             <constraint firstItem="f3D-XT-t50" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="oaD-9T-I0n"/>
+                            <constraint firstItem="wQK-mb-6hX" firstAttribute="top" secondItem="4Q1-qW-slV" secondAttribute="bottom" constant="24" id="rdX-AZ-CPb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f3D-XT-t50" secondAttribute="trailing" constant="40" id="xNZ-JT-Uwx"/>
                             <constraint firstItem="8x5-Ud-PlJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ydV-gC-KT3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f3D-XT-t50" secondAttribute="bottom" constant="329" id="zqA-pU-yBy"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="8rF-F3-UDl"/>
                     <connections>
@@ -97,7 +106,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofI-BU-jKS">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofI-BU-jKS">
                                 <rect key="frame" x="40" y="832" width="334" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.15968440178964105" green="0.66666668653488159" blue="0.062347001852975412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -114,7 +123,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TestCell" id="yFb-z7-5ps" customClass="CartInemTableViewCell" customModule="simpl_demo_app_with_sdk_ios" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yFb-z7-5ps" id="nQo-38-zc9">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -166,8 +175,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3Wc-Aa-ecg"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="Cart" id="s8e-aW-XiE"/>
                     <connections>
@@ -184,7 +193,7 @@
         <scene sceneID="JW0-PB-HFW">
             <objects>
                 <viewController id="wPG-R8-wWZ" customClass="PaymentViewController" customModule="simpl_demo_app_with_sdk_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Suk-R4-p9A">
+                    <view key="view" contentMode="scaleToFill" id="Suk-R4-p9A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -203,7 +212,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3p-AE-MvU">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3p-AE-MvU">
                                 <rect key="frame" x="146" y="345" width="123" height="75"/>
                                 <color key="backgroundColor" red="0.074339191654556408" green="0.86378724093264247" blue="0.16055313885599787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -219,6 +228,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6RG-Dj-vrA"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="9HH-YU-P06" firstAttribute="top" secondItem="6RG-Dj-vrA" secondAttribute="top" constant="52" id="5D9-7E-DQ3"/>
@@ -231,7 +241,6 @@
                             <constraint firstItem="oEv-G6-NR2" firstAttribute="leading" secondItem="Suk-R4-p9A" secondAttribute="leadingMargin" id="mmA-8z-wlB"/>
                             <constraint firstItem="9HH-YU-P06" firstAttribute="leading" secondItem="6RG-Dj-vrA" secondAttribute="leading" constant="120" id="oNC-17-8AA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6RG-Dj-vrA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Payment" id="xh4-mQ-o6g"/>
                     <connections>
@@ -260,7 +269,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cj-bB-PXo">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cj-bB-PXo">
                                 <rect key="frame" x="67" y="764" width="281" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.074111565139959382" green="0.81430132772020725" blue="0.2594852597001136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -269,8 +278,8 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iLt-ag-rjA"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>

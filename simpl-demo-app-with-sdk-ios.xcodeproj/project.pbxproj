@@ -21,11 +21,28 @@
 		18D1C14C2293156A00EFBBA4 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C14B2293156A00EFBBA4 /* PaymentViewController.swift */; };
 		18D1C153229388AF00EFBBA4 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D1C152229388AF00EFBBA4 /* Urls.swift */; };
 		18E6552822A7A679008B344E /* UserNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E6552722A7A679008B344E /* UserNetworkClient.swift */; };
-		CF23B9E8EFFF87F4CA00ACAB /* Pods_simpl_demo_app_with_sdk_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C5902ECBA0AAF0CAA0BB886 /* Pods_simpl_demo_app_with_sdk_ios.framework */; };
+		BFCF0E1B26A3F53900ADFCE1 /* SimplFingerPrint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCF0E1726A3F52000ADFCE1 /* SimplFingerPrint.framework */; };
+		BFCF0E1C26A3F53900ADFCE1 /* SimplFingerPrint.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFCF0E1726A3F52000ADFCE1 /* SimplFingerPrint.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFCF0E1D26A3F53B00ADFCE1 /* SimplZeroClick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFCF0E1926A3F52600ADFCE1 /* SimplZeroClick.framework */; };
+		BFCF0E1E26A3F53B00ADFCE1 /* SimplZeroClick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BFCF0E1926A3F52600ADFCE1 /* SimplZeroClick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BFF7B50F26A16E96000B1737 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFCF0E1C26A3F53900ADFCE1 /* SimplFingerPrint.framework in Embed Frameworks */,
+				BFCF0E1E26A3F53B00ADFCE1 /* SimplZeroClick.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0958A5438C40131FDFA3CF83 /* Pods-simpl-demo-app-with-sdk-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpl-demo-app-with-sdk-ios.debug.xcconfig"; path = "Target Support Files/Pods-simpl-demo-app-with-sdk-ios/Pods-simpl-demo-app-with-sdk-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		18D1C11C228DFE3000EFBBA4 /* simpl-demo-app-with-sdk-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simpl-demo-app-with-sdk-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D1C11F228DFE3000EFBBA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D1C121228DFE3000EFBBA4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +59,8 @@
 		18D1C14B2293156A00EFBBA4 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		18D1C152229388AF00EFBBA4 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		18E6552722A7A679008B344E /* UserNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNetworkClient.swift; sourceTree = "<group>"; };
-		3C5902ECBA0AAF0CAA0BB886 /* Pods_simpl_demo_app_with_sdk_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_simpl_demo_app_with_sdk_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EE23978AE6184E1F4B77B11 /* Pods-simpl-demo-app-with-sdk-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-simpl-demo-app-with-sdk-ios.release.xcconfig"; path = "Target Support Files/Pods-simpl-demo-app-with-sdk-ios/Pods-simpl-demo-app-with-sdk-ios.release.xcconfig"; sourceTree = "<group>"; };
+		BFCF0E1726A3F52000ADFCE1 /* SimplFingerPrint.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SimplFingerPrint.framework; sourceTree = "<group>"; };
+		BFCF0E1926A3F52600ADFCE1 /* SimplZeroClick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SimplZeroClick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF23B9E8EFFF87F4CA00ACAB /* Pods_simpl_demo_app_with_sdk_ios.framework in Frameworks */,
+				BFCF0E1B26A3F53900ADFCE1 /* SimplFingerPrint.framework in Frameworks */,
+				BFCF0E1D26A3F53B00ADFCE1 /* SimplZeroClick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +81,6 @@
 			children = (
 				18D1C11E228DFE3000EFBBA4 /* simpl-demo-app-with-sdk-ios */,
 				18D1C11D228DFE3000EFBBA4 /* Products */,
-				C6A4FDA3655EF0AC05F53ADE /* Pods */,
 				A0D552A3CE20B66DD9ED48B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -141,18 +158,10 @@
 		A0D552A3CE20B66DD9ED48B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C5902ECBA0AAF0CAA0BB886 /* Pods_simpl_demo_app_with_sdk_ios.framework */,
+				BFCF0E1726A3F52000ADFCE1 /* SimplFingerPrint.framework */,
+				BFCF0E1926A3F52600ADFCE1 /* SimplZeroClick.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C6A4FDA3655EF0AC05F53ADE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0958A5438C40131FDFA3CF83 /* Pods-simpl-demo-app-with-sdk-ios.debug.xcconfig */,
-				5EE23978AE6184E1F4B77B11 /* Pods-simpl-demo-app-with-sdk-ios.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,11 +171,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18D1C12E228DFE3200EFBBA4 /* Build configuration list for PBXNativeTarget "simpl-demo-app-with-sdk-ios" */;
 			buildPhases = (
-				B02228A3C9947B2FBF23CE10 /* [CP] Check Pods Manifest.lock */,
 				18D1C118228DFE3000EFBBA4 /* Sources */,
 				18D1C119228DFE3000EFBBA4 /* Frameworks */,
 				18D1C11A228DFE3000EFBBA4 /* Resources */,
-				457F808134E3B434226F04DD /* [CP] Embed Pods Frameworks */,
+				BFF7B50F26A16E96000B1737 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,53 +230,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		457F808134E3B434226F04DD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-simpl-demo-app-with-sdk-ios/Pods-simpl-demo-app-with-sdk-ios-frameworks.sh",
-				"${PODS_ROOT}/SimplZeroClick/SimplZeroClick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SimplZeroClick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-simpl-demo-app-with-sdk-ios/Pods-simpl-demo-app-with-sdk-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B02228A3C9947B2FBF23CE10 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-simpl-demo-app-with-sdk-ios-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18D1C118228DFE3000EFBBA4 /* Sources */ = {
@@ -429,10 +390,10 @@
 		};
 		18D1C12F228DFE3200EFBBA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0958A5438C40131FDFA3CF83 /* Pods-simpl-demo-app-with-sdk-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = "$(SRCROOT)/simpl-demo-app-with-sdk-ios/resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,10 +408,10 @@
 		};
 		18D1C130228DFE3200EFBBA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EE23978AE6184E1F4B77B11 /* Pods-simpl-demo-app-with-sdk-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = "$(SRCROOT)/simpl-demo-app-with-sdk-ios/resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

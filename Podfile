@@ -6,5 +6,5 @@ target 'simpl-demo-app-with-sdk-ios' do
   use_frameworks!
 
   # Pods for simpl-demo-app-with-sdk-ios
-  pod 'SimplZeroClick'
+  # pod 'SimplZeroClick', :path => '../SimplFingerPrint'
 end
